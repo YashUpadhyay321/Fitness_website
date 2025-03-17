@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - Health & Fitness</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="feature.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin-top: 60px; /* Adjust for fixed navbar */
+        }
+
+        .navbar {
+            background-color: #333;
+            padding: 15px 0;
+        }
+
+        .navbar .navbar-brand {
+            font-weight: bold;
+            font-size: 1.6rem;
+            color: #fff !important;
+        }
+
+        .navbar .navbar-nav .nav-link {
+            font-size: 1.1rem;
+            color: #ddd !important;
+            margin-left: 20px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .navbar .navbar-nav .nav-link:hover {
+            color: #f1c40f !important;
+        }
+
+        .feature-box {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-box i {
+            font-size: 3rem;
+            color: #3498db;
+        }
+
+        .feature-box h4 {
+            font-size: 1.4rem;
+            margin-top: 20px;
+        }
+
+        .feature-box p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        #cta {
+            background: #2980b9;
+            color: #fff;
+            padding: 60px 0;
+        }
+
+        #cta h3 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        #cta p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        #cta .btn-light {
+            font-size: 1.1rem;
+            padding: 10px 30px;
+            background-color: #f1c40f;
+            color: #333;
+            border-radius: 30px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        #cta .btn-light:hover {
+            background-color: #f39c12;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 40px 0;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #ecf0f1;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #f39c12;
+        }
+
+        .footer-icons i {
+            font-size: 1.5rem;
+            color: #ecf0f1;
+            margin-right: 20px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .footer-icons i:hover {
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">⚡ Health & Fitness</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Health & Fitness</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">What We Offer</h2>
+            <div class="row">
+                <!-- Workout Feature -->
+                <div class="col-md-4 mb-4">
+                    <div class="feature-box shadow p-4 rounded">
+                        <i class="fas fa-dumbbell text-primary"></i>
+                        <h4 class="mt-3">Custom Workouts</h4>
+                        <p>Create a personalized fitness routine tailored to your goals and preferences.</p>
+                    </div>
+                </div>
+
+                <!-- Nutrition Feature -->
+                <div class="col-md-4 mb-4">
+                    <div class="feature-box shadow p-4 rounded">
+                        <i class="fas fa-apple-alt text-success"></i>
+                        <h4 class="mt-3">Healthy Recipes</h4>
+                        <p>Discover delicious and nutritious meal plans to fuel your body and achieve your goals.</p>
+                    </div>
+                </div>
+
+                <!-- Progress Tracking Feature -->
+                <div class="col-md-4 mb-4">
+                    <div class="feature-box shadow p-4 rounded">
+                        <i class="fas fa-chart-line text-warning"></i>
+                        <h4 class="mt-3">Progress Tracking</h4>
+                        <p>Track your fitness progress, monitor your improvements, and stay motivated.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="how-it-works" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4 text-primary">How It Works</h2>
+            <p class="text-secondary mb-5">Achieving your fitness goals has never been easier. Just follow these three simple steps:</p>
+            <div class="row g-4">
+                <!-- Step 1: Create Profile -->
+                <div class="col-md-4">
+                    <div class="card shadow border-0 h-100">
+                        <div class="card-body text-center">
+                            <div class="icon-circle bg-primary text-light mb-3">
+                                <i class="fas fa-user-cog fa-3x"></i>
+                            </div>
+                            <h5 class="fw-bold">Create Your Profile</h5>
+                            <p class="text-muted">Share your goals, fitness level, and preferences to help us create a personalized plan that suits your needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 2: Start Workout -->
+                <div class="col-md-4">
+                    <div class="card shadow border-0 h-100">
+                        <div class="card-body text-center">
+                            <div class="icon-circle bg-success text-light mb-3">
+                                <i class="fas fa-dumbbell fa-3x"></i>
+                            </div>
+                            <h5 class="fw-bold">Start Your Workout</h5>
+                            <p class="text-muted">Follow your personalized fitness plan, whether at home or in the gym, and stay consistent.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 3: Track & Improve -->
+                <div class="col-md-4">
+                    <div class="card shadow border-0 h-100">
+                        <div class="card-body text-center">
+                            <div class="icon-circle bg-warning text-light mb-3">
+                                <i class="fas fa-chart-line fa-3x"></i>
+                            </div>
+                            <h5 class="fw-bold">Track & Improve</h5>
+                            <p class="text-muted">Monitor your progress with detailed analytics and adjust your plan to achieve your goals faster.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Call-to-Action -->
+            <div class="mt-5">
+                <a href="#features" class="btn btn-primary btn-lg px-5">Get Started Now</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="why-choose-us" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4 text-primary">Why Choose Us?</h2>
+            <p class="mb-5 text-secondary">Your fitness journey deserves the best tools, support, and guidance. Here’s why we’re the perfect partner for your goals:</p>
+            <div class="row g-4">
+                <!-- Expert Trainers -->
+                <div class="col-md-4">
+                    <div class="card shadow border-0 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-shield fa-4x text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">Expert Trainers</h5>
+                            <p class="card-text">Our trainers are certified professionals with years of experience, creating effective and results-driven plans tailored to your goals.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Personalized Approach -->
+                <div class="col-md-4">
+                    <div class="card shadow border-0 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-hand-holding-heart fa-4x text-success mb-3"></i>
+                            <h5 class="card-title fw-bold">Personalized Approach</h5>
+                            <p class="card-text">We understand that no two individuals are the same. Our platform provides fitness and nutrition plans designed exclusively for your needs and preferences.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Continuous Support -->
+                <div class="col-md-4">
+                    <div class="card shadow border-0 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-sync-alt fa-4x text-warning mb-3"></i>
+                            <h5 class="card-title fw-bold">Continuous Support</h5>
+                            <p class="card-text">We’re here for you 24/7, offering guidance, answering questions, and ensuring you stay motivated on your fitness journey.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Additional CTA -->
+            <div class="mt-5">
+                <a href="#features" class="btn btn-primary btn-lg px-5">Explore Features</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="faq" class="py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                            How do I get started with your platform?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Simply create an account, fill in your fitness preferences and goals, and you'll be given a personalized plan to follow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                            Are the workout plans suitable for beginners?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes! Our workout plans are designed to accommodate all fitness levels, from beginners to advanced users.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                            Can I track my progress over time?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes! Our platform includes a progress tracking feature where you can monitor improvements and stay motivated.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="partners" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4 text-primary">Our Partners</h2>
+            <p class="text-muted">We collaborate with industry-leading brands and professionals to deliver the ultimate fitness experience:</p>
+            <div class="row g-4">
+              
+                <div class="col-6 col-md-3">
+                    <div class="partner-logo shadow-sm p-3 bg-white rounded">
+                        <img src="/fit/images/b1.jpg" alt="Brand 1" class="img-fluid rounded" style="width: 100%; height: 300px;">
+                    </div>
+                </div>
+               <div class="col-6 col-md-3">
+                    <div class="partner-logo shadow-sm p-3 bg-white rounded">
+                        <img src="/fit/images/b2.jpg" alt="Brand 2" class="img-fluid rounded" style="width: 100%; height: 300px;">
+                    </div>
+                </div>
+              
+                <div class="col-6 col-md-3">
+                    <div class="partner-logo shadow-sm p-3 bg-white rounded">
+                        <img src="/fit/images/b3.jpg" alt="Brand 3" class="img-fluid rounded" style="width: 100%; height: 300px;">
+                    </div>
+                </div>
+               
+                <div class="col-6 col-md-3">
+                    <div class="partner-logo shadow-sm p-3 bg-white rounded">
+                        <img src="/fit/images/b4.jpg" alt="Brand 4" class="img-fluid rounded" style="width: 100%; height: 300px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+                
+
+    <!-- Call to Action Section -->
+    <section id="cta" class="py-5 text-center">
+        <div class="container">
+            <h3>Ready to Start Your Fitness Journey?</h3>
+            <p class="mb-4">Join us today and start transforming your life with the right tools, support, and motivation.</p>
+            <a href="#contact" class="btn btn-light">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-light pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">About Us</h5>
+                    <p>We are a health and fitness platform dedicated to helping you achieve your goals with personalized plans, workouts, and nutrition advice.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Useful Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#about" class="text-light text-decoration-none">About</a></li>
+                        <li><a href="#features" class="text-light text-decoration-none">Features</a></li>
+                        <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Follow Us</h5>
+                    <div class="footer-icons">
+                        <a href="#" class="text-light fs-4 me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-light fs-4 me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light fs-4 me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light fs-4 me-3"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-light">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Health & Fitness. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

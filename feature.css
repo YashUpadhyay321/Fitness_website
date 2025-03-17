@@ -1,0 +1,52 @@
+/* Custom Features Section */
+#features {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.feature-box {
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#cta {
+    background-color: #1a73e8;
+    color: white;
+}
+
+#cta .btn {
+    background-color: #ffffff;
+    color: #1a73e8;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#cta .btn:hover {
+    background-color: #0c63e3;
+    color: white;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #212529;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #1a73e8;
+}
+
+footer .social-icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
